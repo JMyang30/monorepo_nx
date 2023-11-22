@@ -1,0 +1,29 @@
+{
+  "name": "nx-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/nx-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nx-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "nx:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nx:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nx-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx"]
+}
