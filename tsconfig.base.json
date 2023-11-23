@@ -21,7 +21,9 @@
       "@nx/orders": ["libs/orders/src/index.ts"],
       "@nx/orders/server": ["libs/orders/src/server.ts"],
       "@nx/products": ["libs/products/src/index.ts"],
-      "@nx/shared-ui": ["libs/shared/ui/src/index.ts"]
+      "@nx/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "@nx/ui-components": ["libs/ui-components/src/index.ts"],
+      "@nx/ui-components/server": ["libs/ui-components/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
