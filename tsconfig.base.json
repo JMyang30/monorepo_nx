@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "jsx": "react-jsx",
+    "paths": {
+      "@nx/cart": ["libs/cart/src/index.ts"],
+      "@nx/cart/server": ["libs/cart/src/server.ts"],
+      "@nx/orders": ["libs/orders/src/index.ts"],
+      "@nx/orders/server": ["libs/orders/src/server.ts"],
+      "@nx/products": ["libs/products/src/index.ts"],
+      "@nx/shared-ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

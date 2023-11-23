@@ -1,9 +1,9 @@
 'use client';
 
-import styled from 'styled-components';
+import { Cart } from '@nx/cart';
 import { Orders } from '@nx/orders';
-
-import { ProductList } from '@nx/products';
+import { ProductList, Products } from '@nx/products';
+import styled from 'styled-components';
 
 const StyledPage = styled.div`
   .page {
@@ -18,14 +18,16 @@ export default async function Index() {
    */
   return (
     <StyledPage>
-      <Orders />
-      <ProductList />
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
+            <Cart />
+            <Orders />
+            <Products />
+            <ProductList />
             <h1>
               <span> Hello there, </span>
-              Welcome nx 👋
+              Welcome inventory 👋
             </h1>
           </div>
 
