@@ -73,7 +73,11 @@
     --radius: 0.5rem;
   }
 }
-
+button {
+  outline: none;
+  active: none;
+  border: none;
+}
 @layer base {
   * {
     @apply border-border;

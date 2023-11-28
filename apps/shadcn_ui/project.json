@@ -4,6 +4,9 @@
   "sourceRoot": "apps/shadcn_ui",
   "projectType": "application",
   "targets": {
+    "start": {
+      "executor" : "@nx/next:start"
+    },
     "build": {
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
